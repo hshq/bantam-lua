@@ -1,7 +1,7 @@
 This is a tiny little Java app to demonstrate Pratt parsing. For a full explanation, see [this blog post](http://journal.stuffwithstuff.com/2011/03/19/pratt-parsers-expression-parsing-made-easy/).
 
 
-
+```
 运行和输出（Lua 5.4 & luajit 2.1）：
 $ cd src
 $ lua Main.lua ; luajit Main.lua
@@ -51,3 +51,4 @@ Output: Exp 的输出，其中标点符号原样输出，L 和 T 与上同，* �
     eP 是解析 T 的优先级以上的 token 得到一个表达式，
     eP- 是降低一级，即包括同级 token ，用于右结合；
 最后一列是关联的 token 。
+```
