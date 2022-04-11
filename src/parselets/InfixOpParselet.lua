@@ -1,0 +1,20 @@
+
+--[[
+ * One of the two parselet interfaces used by the Pratt parser. An
+ * InfixOpParselet is associated with a token that appears in the middle of the
+ * expression it parses. Its parse() method will be called after the left-hand
+ * side has been parsed, and it in turn is responsible for parsing everything
+ * that comes after the token. This is also used for postfix expressions, in
+ * which case it simply doesn't consume any more tokens in its parse() call.
+--]]
+---@class InfixOpParselet
+return interface {
+  ---@param parser Parser
+  ---@param left Exp
+  ---@param token Token
+  ---@return Exp
+  parse = 'function(parser, left, token)',
+
+  ---@return number int
+  getPrecedence = 'function()',
+}
