@@ -12,7 +12,7 @@ Passed all 24 tests.
 
 - utils 外的代码文件是原 Java 版的对应移植；
 - utils 中是辅助功能代码，以及为了适配原 Java 逻辑所需功能；
-- 注释采用 EmmyLua ，在 vscode 中配合 [sumneko.lua](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) 扩展很友好。
+- 注释采用 [EmmyLua](https://emmylua.github.io/annotation.html)，在 vscode 中配合 [sumneko.lua](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) 扩展很友好，[文档](https://github.com/sumneko/lua-language-server/wiki/EmmyLua-Annotations)。
 
 
 类继承和接口实现关系（OO 实现说明见 oo.lua 注释）：
