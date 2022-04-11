@@ -1,0 +1,12 @@
+
+TODO hsq 阅读原文注释。
+TODO hsq 参数类型验证？
+TODO hsq oo: ParseException extends RuntimeException ，只调用 super(message)
+TODO hsq oo: Lexer implements Iterator<Token>
+TODO hsq StringBuilder.append(...) 改成 .format('...', ...) ？
+
+NOTE hsq enum TokenType
+NOTE hsq Precedence 字段都是 final
+NOTE hsq Token 类是 final
+NOTE hsq List<T> v = new ArrayList<T>()
+NOTE hsq Map<T1, T2> m = new HashMap<T1, T2>()
